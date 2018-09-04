@@ -1,0 +1,260 @@
+    *, *:before, *:after {
+        box-sizing: border-box;
+    }
+
+/*-------- bold text ------*/
+    b {
+        font-weight: bold;
+    }
+
+
+/*---------- Mobile View ---------*/
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: url(assets/bckgrnd.png);
+    background-repeat: repeat;
+    color: #333;
+}
+
+    /*------- Links --------*/
+    a {
+        text-decoration: none;
+        color: #666;
+    }
+
+    /*------ Top Container mobile -------*/
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, 1fr);
+        height: 98vh;   
+    }
+
+    nav {
+        margin: 40px 0 25px 0;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+        margin-left: 30px;
+    }
+
+    nav ul li {
+        margin-right: 30px;
+    }
+
+    /*-------- Information about me mobile -------*/
+    .upper{
+        margin: 30px;
+    }
+
+    .upper h1, h2 {
+        font-family: Montserrat;
+    }
+
+    .upper h1 {
+        font-size: 1.9em;
+        margin-bottom: 5px;
+    }
+
+    .upper h2 {
+        font-weight: 700;
+        font-size: 1.9em;  
+        margin-bottom: 20px;
+    }
+
+    /*------- profile picture mobile -------*/
+    .profilepic {
+        margin: 40px 0 0 0;
+        justify-self: center;
+        border: 3px solid #2c5fa8;
+        border-radius: 50%;
+        height: 110px;
+        width: 110px;
+    }
+
+    .upper p {
+        color: #666;
+        line-height: 1.2;
+        font-weight: 100;
+        font-size: .8em;
+        width: 350px;
+    }
+
+    /*------ Lower container mobile -------*/
+    .lower {
+        background-color: rgba(150, 150, 150, .6);
+        color: #fff;
+        padding: 20px 0 15px 0;  
+    }
+
+    /*---- gallery title mobile ------*/
+    .gallery-header h5 {
+        margin: 5px 0 25px 35px;
+        font-size: 1.3em;
+        font-weight: 100;
+    }
+
+    .arrow { 
+        margin-left: 13px;
+        transform: skewY(3);
+        transform: skewX(4);
+    }
+
+    /*-------- My work gallery mobile -------*/
+    .gallery {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, 1fr);
+        border-top: 2px solid #fff;
+    }
+
+    .box {
+        grid-row: span 3;
+        color:#000;
+        font-family: Montserrat;
+        height: 180px;
+        margin: 20px 40px;
+    }
+    
+    /*------- items inside gallery boxes mobile -------*/
+    .layer {
+        background-color: rgba(150, 150, 150, .7);
+        font-size: 1.125em;
+        height: 100%;
+    }
+
+    .inner-text {
+        padding: 20px;
+        width: 250px;
+    }
+
+    .inner-text h1 {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .inner-text a:nth-child(3) {  
+        position: absolute;
+        right: 50px;
+        margin-top: 64px;
+        text-decoration: none;
+        color: #000;
+    }
+
+    /*------ Gallery background images mobile -------*/
+    .spaceage {
+        background-image: url(https://placeimg.com/350/200/tech);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .lister {
+        background-image: url(https://placeimg.com/350/200/people);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .musicjams {
+        background-image: url(https://placeimg.com/350/200/animals);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /*------- footer mobile -------*/
+
+    footer {
+        background-color: rgba(150, 150, 150, .6);
+        border-top: 2px solid #fff;
+        color: #fff;
+        font-size: .7em;
+        text-align: center;
+    }
+
+    footer p {
+        padding: 25px 90px;
+        line-height: 1.1;
+    }
+
+    footer p span {
+        color: red;
+    }
+
+/*----------- DESKTOP SITE ------------*/
+
+    @media only screen and (min-width: 600px) {
+
+        /*------ Top Container DESKTOP -------*/
+        main {
+            grid-template-rows: 1fr 1fr 20px;
+        }
+
+        nav {
+            grid-row: 1 / 2;
+        }
+
+        nav ul {
+            justify-content: left;
+            margin: 40px 0 40px 80px;
+        }
+
+        /*------ Top Container DESKTOP -------*/
+        .upper {
+            grid-row: 2 / 3;
+            margin: 40px 0 40px 80px;
+        }
+
+        /*------- profile picture DESKTOP -------*/
+        .profilepic {
+            justify-self: right;
+            position: relative;
+            right: 80px;  
+            bottom: 160px;  
+            height: 200px;
+            width: 200px;
+        }
+
+        /*---- gallery title DESKTOP ------*/
+        .gallery-header h5 {
+            border-bottom: 2px solid white;
+            padding-bottom: 30px;  
+            margin: 0 0 40px 0;
+        }
+
+        /*------ Lower container DESKTOP -------*/
+        .lower {
+            padding: 40px 80px;
+        }
+
+        /*-------- My work gallery DESKTOP -------*/
+        .gallery {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr;
+            grid-gap: 40px;
+            border: none;
+            padding-bottom: 150px;
+        }
+
+        /*------- items inside gallery boxes DESKTOP -------*/
+        .layer {
+            display: none;
+        }
+
+        .box {
+            height: 200px;
+            margin:0;
+        }
+
+         /*------- footer DESKTOP-------*/
+
+        footer {
+            border: none;
+        }
+
+        footer p {
+            border-top: 2px solid #fff;
+            padding: 8px 0;
+            margin: 0 80px;
+        }
+    }
