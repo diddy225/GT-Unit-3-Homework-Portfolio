@@ -148,8 +148,8 @@ body{
         background-size: cover;
     }
 
-    .lister {
-        background-image: url(https://placeimg.com/350/200/people);
+    .to-do {
+        background-image: url(./assets/Todoapp.png);
         background-repeat: no-repeat;
         background-size: cover;
     }
