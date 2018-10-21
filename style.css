@@ -1,7 +1,3 @@
-    *, *:before, *:after {
-        box-sizing: border-box;
-    }
-
 /*-------- bold text ------*/
     b {
         font-weight: bold;
@@ -18,8 +14,14 @@ body{
 
     /*------- Links --------*/
     a {
+        font-weight: bold;
         text-decoration: none;
-        color: #666;
+    }
+    .gallery a {
+        position: relative;
+        color: #000;
+        bottom: 40px;
+        left: 150px;
     }
 
     /*------ Top Container mobile -------*/
@@ -69,6 +71,7 @@ body{
         margin: 40px 0 0 0;
         justify-self: center;
         border: 3px solid #2c5fa8;
+        background-color: lightslategray;
         border-radius: 50%;
         height: 110px;
         width: 110px;
@@ -78,7 +81,7 @@ body{
         color: #666;
         line-height: 1.2;
         font-weight: 100;
-        font-size: .8em;
+        font-size: 1em;
         width: 350px;
     }
 
@@ -94,12 +97,6 @@ body{
         margin: 5px 0 25px 35px;
         font-size: 1.3em;
         font-weight: 100;
-    }
-
-    .arrow { 
-        margin-left: 13px;
-        transform: skewY(3);
-        transform: skewX(4);
     }
 
     /*-------- My work gallery mobile -------*/
@@ -144,8 +141,8 @@ body{
     }
 
     /*------ Gallery background images mobile -------*/
-    .spaceage {
-        background-image: url(https://placeimg.com/350/200/tech);
+    .yelp-clone {
+        background-image: url(./assets/yelpscreen.png);
         background-repeat: no-repeat;
         background-size: cover;
     }
@@ -210,9 +207,9 @@ body{
             justify-self: right;
             position: relative;
             right: 80px;  
-            bottom: 160px;  
-            height: 200px;
-            width: 200px;
+            bottom: 105px;  
+            height: 150px;
+            width: 150px;
         }
 
         /*---- gallery title DESKTOP ------*/
@@ -229,27 +226,32 @@ body{
 
         /*-------- My work gallery DESKTOP -------*/
         .gallery {
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: 1fr;
-            grid-gap: 40px;
+            display: flex;
+            justify-content: space-evenly;
             border: none;
             padding-bottom: 150px;
         }
 
-        /*------- items inside gallery boxes DESKTOP -------*/
         .layer {
-            display: none;
+            width: 350px;
+        }
+
+        /*------- items inside gallery boxes DESKTOP -------*/
+        .inner-text a:nth-child(3) {
+            position: relative;
+            right: 0;
+            margin-top: 0px;
         }
 
         .box {
-            height: 200px;
-            margin:0;
+            height: 250px;
         }
 
          /*------- footer DESKTOP-------*/
 
         footer {
             border: none;
+            font-size: 1em;
         }
 
         footer p {
